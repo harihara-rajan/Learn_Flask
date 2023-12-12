@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        
+    </style>
+    <h1>Final Result </h1>
+    
+    
+    <body>
+        {% if score >= 50 %}
+            {# This is the comment section %}
+            {% set res = "Pass" %}
+        {% else %}
+            {% set res = "Fail" %}
+        {% endif %}
+        <h2>The result is {{res}} and the average score is {{score}} </h2> <!-- Jinja2 -->
+    </body>
+</html>
